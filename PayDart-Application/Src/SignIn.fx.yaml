@@ -1,0 +1,167 @@
+SignIn As screen:
+    OnVisible: |-
+        =UpdateContext({var_password_visible: false});
+
+    Label7 As label:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =1052
+        Size: =21
+        Text: =
+        Width: =573
+        X: =32
+        Y: =39
+        ZIndex: =1
+
+    Image11 As image:
+        Height: =398
+        Image: =paydartlogo
+        Width: =488
+        X: =75
+        ZIndex: =3
+
+    Label8 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        Height: =70
+        Size: =20
+        Text: ="LOGIN TO CONTINUE"
+        Width: =560
+        X: =39
+        Y: =274
+        ZIndex: =4
+
+    Label9 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =18
+        Text: ="Email/Username"
+        Width: =560
+        X: =80
+        Y: =360
+        ZIndex: =5
+
+    TextInput1 As text:
+        Default: =
+        Height: =70
+        HintText: ="Entetr Your Username"
+        Size: =21
+        Width: =506
+        X: =79
+        Y: =430
+        ZIndex: =6
+
+    Button5 As button:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =63
+        OnSelect: |
+            =If(
+              IsBlank(TextInput1.Text) || IsBlank(TextInput2.Text),
+              Notify("Please enter your Username and Password", NotificationType.Error),
+              Navigate(SuccessSavePasswordScreen,ScreenTransition.Fade),
+              If(
+                TextInput1.Text= TextInput2.Text,
+                Notify("Login Successful", NotificationType.Success),
+                Notify("Invalid Username or Password", NotificationType.Error),
+                Navigate(ErrorScreen,ScreenTransition.Fade)
+              )
+            )
+        Size: =24
+        Text: ="SignIn"
+        Width: =206
+        X: =213
+        Y: =740
+        ZIndex: =8
+
+    Label10 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        Size: =18
+        Text: ="Password"
+        Width: =339
+        X: =80
+        Y: =544
+        ZIndex: =9
+
+    TextInput2 As text:
+        Default: =
+        Height: =66
+        HintText: ="Enter your Password"
+        Mode: =TextMode.Password
+        Size: =21
+        Width: =505
+        X: =80
+        Y: =601
+        ZIndex: =10
+
+    Icon1 As icon.View:
+        Height: =20
+        Icon: =Icon.View
+        OnSelect: |-
+            =UpdateContext({var_password_visible: !var_password_visible})
+        Width: =36
+        X: =527
+        Y: =623
+        ZIndex: =12
+
+    Label1 As label:
+        Align: =Align.Right
+        Color: =RGBA(39, 67, 125, 1)
+        Height: =70
+        OnSelect: =Navigate(ForgotPassword,ScreenTransition.Fade)
+        Size: =18
+        Text: ="Forgot Password?"
+        Underline: =true
+        Width: =560
+        X: =25
+        Y: =667
+        ZIndex: =13
+
+    Label20 As label:
+        Color: =RGBA(39, 67, 125, 1)
+        Height: =53
+        OnSelect: =Navigate(PayFeeScreen,ScreenTransition.Fade)
+        Size: =22
+        Text: ="₹PayFee "
+        Underline: =true
+        Width: =156
+        X: =80
+        Y: =966
+        ZIndex: =14
+
+    Label21 As label:
+        Align: =Align.Right
+        Color: =RGBA(39, 67, 125, 1)
+        Height: =62
+        OnSelect: =Navigate(GetHelpScreen,ScreenTransition.Fade)
+        Size: =22
+        Text: ="Get help?"
+        Underline: =true
+        Width: =156
+        X: =419
+        Y: =957
+        ZIndex: =15
+
+    Label28 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        Size: =18
+        Text: ="Do you have an account? "
+        Width: =322
+        X: =49
+        Y: =842
+        ZIndex: =16
+
+    Label29 As label:
+        Color: =RGBA(0, 13, 75, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Size: =20
+        Text: ="SignUp"
+        Underline: =true
+        Width: =133
+        X: =365
+        Y: =836
+        ZIndex: =17
+

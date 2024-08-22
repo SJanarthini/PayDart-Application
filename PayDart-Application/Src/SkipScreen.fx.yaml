@@ -1,0 +1,86 @@
+SkipScreen As screen:
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =1136
+        Width: =640
+        ZIndex: =1
+
+    Label3 As label:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =1046
+        Size: =21
+        Text: =
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Rectangle4 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =44
+        Width: =142
+        X: =74
+        Y: =75
+        ZIndex: =3
+
+    Image4 As image:
+        Height: =110
+        Image: =paydartlogo
+        Width: =166
+        X: =62
+        Y: =40
+        ZIndex: =4
+
+    Circle1 As circle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =297
+        Width: =292
+        X: =174
+        Y: =283
+        ZIndex: =5
+
+    Label4 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =24
+        Text: ="Pay Fees Online"
+        Width: =560
+        X: =40
+        Y: =646
+        ZIndex: =7
+
+    Label5 As label:
+        Align: =Align.Center
+        Font: =Font.Lato
+        Height: =70
+        Size: =21
+        Text: ="Py your fees inline on your finger tip with multiple payment options"
+        Width: =560
+        X: =41
+        Y: =755
+        ZIndex: =8
+
+    Button1 As button:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =67
+        OnSelect: =Navigate(PageScreen,ScreenTransition.Fade)
+        Size: =24
+        Text: ="Skip"
+        Width: =260
+        X: =186
+        Y: =932
+        ZIndex: =9
+
+    Image10 As image:
+        Height: =260
+        Image: ='onlinepay-removebg-preview'
+        Width: =265
+        X: =216
+        Y: =301
+        ZIndex: =10
+

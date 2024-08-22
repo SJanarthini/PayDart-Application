@@ -1,0 +1,135 @@
+NextScreen As screen:
+
+    Label32 As label:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =1056
+        Size: =21
+        Text: =
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Rectangle7 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Width: =156
+        X: =60
+        Y: =94
+        ZIndex: =2
+
+    Image16 As image:
+        Height: =123
+        Image: =paydartlogo
+        Width: =156
+        X: =60
+        Y: =52
+        ZIndex: =3
+
+    Label33 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =18
+        Text: ="Fees"
+        Width: =220
+        X: =60
+        Y: =186
+        ZIndex: =4
+
+    Checkbox1 As checkbox:
+        Height: =61
+        Size: =21
+        Text: ="Tuition Fees"
+        Width: =256
+        X: =76
+        Y: =244
+        ZIndex: =5
+
+    Checkbox2 As checkbox:
+        Height: =85
+        Size: =21
+        Text: ="Transport Fees"
+        Width: =280
+        X: =76
+        Y: =294
+        ZIndex: =6
+
+    Label34 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        Size: =18
+        Text: ="Tution Fees Term"
+        Width: =460
+        X: =60
+        Y: =410
+        ZIndex: =7
+
+    Dropdown2 As dropdown:
+        Color: =RGBA(116, 116, 116, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =59
+        Items: =["Term A","Term B","Term A & B"]
+        Size: =18
+        Width: =485
+        X: =60
+        Y: =465
+        ZIndex: =8
+
+    Label35 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =18
+        Text: ="Bus Fees Term"
+        Width: =186
+        X: =60
+        Y: =560
+        ZIndex: =9
+
+    Dropdown3 As dropdown:
+        Color: =RGBA(116, 116, 116, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =66
+        Items: =["Term A","Term B","Term A & B"]
+        Size: =18
+        Width: =485
+        X: =60
+        Y: =619
+        ZIndex: =10
+
+    Label36 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =18
+        Text: ="Pay Fees"
+        Width: =123
+        X: =60
+        Y: =740
+        ZIndex: =11
+
+    Image17 As image:
+        Height: =146
+        Image: ='upi_logo-removebg-preview'
+        OnSelect: =Navigate(upiScreen,ScreenTransition.Fade)
+        Width: =190
+        X: =76
+        Y: =806
+        ZIndex: =12
+
+    Image18 As image:
+        Height: =146
+        Image: ='gpaylogo-removebg-preview'
+        OnSelect: =Navigate(GpayScreen,ScreenTransition.Fade)
+        Width: =256
+        X: =315
+        Y: =806
+        ZIndex: =13
+
+    Image19 As image:
+        Height: =76
+        Image: ='paytm-removebg-preview'
+        OnSelect: =Navigate(PaytmScreen,ScreenTransition.Fade)
+        Width: =243
+        X: =184
+        Y: =985
+        ZIndex: =14
+

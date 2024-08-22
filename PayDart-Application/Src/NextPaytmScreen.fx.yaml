@@ -1,0 +1,70 @@
+NextPaytmScreen As screen:
+
+    Label37_5 As label:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =1050
+        Size: =
+        Text: =
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Rectangle8_5 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =39
+        Width: =131
+        X: =61
+        Y: =81
+        ZIndex: =2
+
+    Image20_5 As image:
+        Height: =87
+        Image: =paydartlogo
+        Width: =260
+        Y: =57
+        ZIndex: =3
+
+    Image21_5 As image:
+        Height: =320
+        Image: ='paytm-removebg-preview'
+        Width: =416
+        X: =112
+        Y: =189
+        ZIndex: =4
+
+    Label38_5 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =63
+        Size: =18
+        Text: ="Enter your amount"
+        Width: =242
+        X: =185
+        Y: =526
+        ZIndex: =5
+
+    TextInput7_5 As text:
+        BorderStyle: =BorderStyle.None
+        Default: =
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =55
+        HintText: ="₹"
+        Size: =18
+        Width: =279
+        X: =167
+        Y: =589
+        ZIndex: =6
+
+    Button10_5 As button:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =70
+        OnSelect: =Navigate(PaytmSuccessScreen,ScreenTransition.Fade)
+        Size: =24
+        Text: ="Pay"
+        Width: =280
+        X: =166
+        Y: =793
+        ZIndex: =7
+

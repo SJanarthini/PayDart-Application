@@ -1,0 +1,133 @@
+EngCollegeScreen As screen:
+
+    Label31 As label:
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =1052
+        Size: =21
+        Text: =
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Image12 As image:
+        Height: =140
+        Image: ='sseilogo-removebg-preview_1'
+        Width: =530
+        X: =55
+        Y: =167
+        ZIndex: =2
+
+    Label15 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =18
+        Text: ="Username"
+        Width: =156
+        X: =55
+        Y: =341
+        ZIndex: =3
+
+    Rectangle6 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =30
+        Width: =114
+        X: =76
+        Y: =90
+        ZIndex: =4
+
+    Image9 As image:
+        Height: =106
+        Image: =paydartlogo
+        Width: =156
+        X: =55
+        Y: =52
+        ZIndex: =5
+
+    TextInput5 As text:
+        Default: =
+        Height: =73
+        HintText: ="Enter your name"
+        Size: =18
+        Width: =466
+        X: =55
+        Y: =382
+        ZIndex: =6
+
+    Label18 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =18
+        Text: ="Department"
+        Width: =173
+        X: =55
+        Y: =502
+        ZIndex: =7
+
+    Dropdown1 As dropdown:
+        Color: =RGBA(116, 116, 116, 1)
+        Default: ="none"
+        Height: =68
+        Items: =["Information Technology","Computer Science & Engineering", "Artificial intelligence and Data Science","Bio-Medical Engineering","Electronics and Communication Engineering","Agriculture Engineering"]
+        OnChange: =
+        SelectionFill: =RGBA(0, 13, 75, 1)
+        Size: =18
+        Width: =466
+        X: =55
+        Y: =542
+        ZIndex: =8
+
+    Label24 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =18
+        Text: ="Year"
+        Width: =222
+        X: =55
+        Y: =639
+        ZIndex: =9
+
+    Radio2 As radio:
+        FontWeight: =FontWeight.Bold
+        Height: =166
+        Items: =["I","II","III","IV"]
+        RadioSize: =30
+        Size: =18
+        Width: =135
+        X: =55
+        Y: =669
+        ZIndex: =10
+
+    Label26 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Size: =18
+        Text: ="Registration Number"
+        Width: =275
+        X: =55
+        Y: =846
+        ZIndex: =11
+
+    TextInput6 As text:
+        Default: =
+        Height: =62
+        HintText: ="Enter your registration number"
+        Size: =18
+        Width: =466
+        X: =55
+        Y: =888
+        ZIndex: =12
+
+    Button2 As button:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(255, 191, 0, 1)
+        Height: =47
+        OnSelect: =Navigate(NextScreen,ScreenTransition.Fade)
+        Size: =24
+        Text: ="Next"
+        Width: =212
+        X: =211
+        Y: =1001
+        ZIndex: =13
+
